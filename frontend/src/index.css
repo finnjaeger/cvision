@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient: linear-gradient(120deg, #000300, #000300, #00df9832 , #000300, #000300);
+
+}
+
+body {
+  background-color: #000300;
+  background-size: 250%;
+  background-image: var(--gradient);
+  animation: bg-animation 25s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}
+}
+
+/*body {
+  background-color: #000300;
+  /*background-image: linear-gradient(120deg, #00df98a4 0%, #000300 30%);*/
+  /*background-image: radial-gradient(circle at Top Left, #00df9854 0%, #000300 50%);}*/
+  
