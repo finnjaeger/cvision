@@ -19,7 +19,7 @@ def lambda_handler(event, context):
     print(f"Debug Mode: {debug_mode}")
     if debug_mode:
         response = {
-            "uploadId": "123c551b-55d6-465b-850d-271a56d970da",
+            "uploadId": "2f951640-24fc-46ba-93d8-c7558bd6d0e2",
             "message": "CV uploaded successfully and initiated processing",
         }
         return generate_response(200, response)
